@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textview">#D50505</color>
+    <color name="background">#00BCD4</color>
+    <color name="background2">#8DDC90</color>
+    <color name="text">#111212</color>
+    <color name="text2">#111212</color>
+    <color name="btncal">#FF9800</color>
+    <color name="progress">#0C2A85</color>
+    <color name="btn1">#EA4A0B</color>
+    <color name="btn2">#EA4A0B</color>
+    <color name="tintback">#646A6A</color>
+    <color name="green">#1B5E20</color>
+    <color name="green_dark">#003300</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="blue">#0288D1</color>
+    <color name="blue_dark">#005B9F</color>
+    <color name="blue_light">#81D4FA</color>
+    <color name="mainback">#BCEFA6</color>
+    <color name="descrip">#D2D4DF</color>
+
+</resources>

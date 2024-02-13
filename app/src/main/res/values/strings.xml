@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">IMCcalculadora</string>
+    <string name="restpeso">subtract weight</string>
+    <string name="sumpeso">add weight</string>
+    <string name="altura">altura</string>
+    <string name="cms">cms</string>
+    <string name="_100_cms">100 cms</string>
+    <string name="sumar">+</string>
+    <string name="restar">-</string>
+    <string name="peso">Peso</string>
+    <string name="kilo">10kg</string>
+    <string name="calcular_imc">Calcular imc</string>
+    <string name="sum">Sum</string>
+    <string name="Weight">peso</string>
+    <string name="_10_kg">10 kg</string>
+    <string name="plus">+</string>
+    <string name="rest">-</string>
+    <string name="add">sumar</string>
+    <string name="menos">menos</string>
+    <string name="menoss">menos</string>
+</resources>
+
+

@@ -1,0 +1,172 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".IMC">
+
+
+    <TextView
+        android:id="@+id/texttilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_primary95"
+        android:gravity="center"
+        android:text="IMCcalculadora"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/textview"
+        android:textSize="50sp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="altura"
+            android:textAllCaps="true"
+            android:textColor="@color/text2"
+            android:textSize="30sp"
+            app:layout_constraintTop_toBottomOf=" @+id/texttilte" />
+
+        <TextView
+            android:id="@+id/varcms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:text="100 cms"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="278dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="10"
+            android:progressTint="@color/progress"
+            android:stepSize="1"
+            android:valueFrom="100"
+            android:valueTo="200"
+            app:layout_constraintTop_toBottomOf="@+id/height" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:text="peso"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@id/progressBar"
+            app:layout_constraintStart_toStartOf="@id/progressBar"
+            app:layout_constraintTop_toBottomOf="@id/progressBar" />
+
+        <TextView
+            android:id="@+id/varpeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:text="10 kg"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+                android:id="@+id/btn1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/btn1"
+                android:contentDescription="sumar"
+                android:text="mas"
+                android:src="@drawable/menos_icon"
+                app:fabCustomSize="75dp"
+                android:textSize="45sp"
+                android:tint="@color/tintback" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                app:fabCustomSize="75dp"
+                android:backgroundTint="@color/btn2"
+                android:contentDescription="restar"
+                android:text="@string/menoss"
+                android:src="@drawable/mas_icon"
+                android:textSize="45sp"
+                android:tint="@color/tintback" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/barra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/material_dynamic_secondary70"
+            android:gravity="center"
+            android:text="calcular_imc"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/material_dynamic_primary30"
+            android:gravity="center"
+            android:text="Resultado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/textview"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/descrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/descrip"
+            android:layout_gravity="center"
+            android:text="Descripcion"
+            android:textSize="45dp"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
